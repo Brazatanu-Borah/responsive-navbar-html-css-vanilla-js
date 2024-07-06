@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+	<title>Responsive Navigation Bar With JS</title>
+</head>
+
+<body>
+
+	<header>
+
+		<!-- Branding-->
+		<div class="logo-wrap"><img src="../../../fake_logo_white.png" alt="fake logo" class="logo" /></div>
+
+		<!-- Hamburger Icon-->
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div> <!-- // Hamburger Icon-->
+
+		<!-- Navigation Bar-->
+		<nav class="nav-menu">
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav> <!-- // Navigation Bar-->
+
+	</header> <!-- // Header-->
+	
+	<script>
+		
+		const hamburger = document.querySelector('.hamburger');
+		
+		hamburger.onclick = function() {
+			navBar = document.querySelector('.nav-menu');
+			navBar.classList.toggle('active');
+		}
+		
+	</script>
+	
+</body>
+
+</html>
